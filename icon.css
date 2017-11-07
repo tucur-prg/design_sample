@@ -1,0 +1,33 @@
+.icon-heart{
+    position:relative;
+    padding-top:20px;
+    margin:0 auto;
+    width:200px;
+    height:170px;
+    border:1px solid #000;
+    text-align:center;
+    display:table-cell;
+    vertical-align:middle;
+}
+.icon-heart:before,
+.icon-heart:after{
+    z-index:-1;
+    position:absolute;
+    content:"";
+    width:95px;
+    height:150px;
+    background:pink;
+    border:1px solid pink;
+}
+.icon-heart:before{
+    top:10px;
+    left:30px;
+    transform:rotate(-45deg);
+    border-radius:100px 100px 0 0;
+}
+.icon-heart:after{
+    top:10px;
+    left:70px;
+    transform:rotate(45deg);
+    border-radius:100px 100px 0 0;
+}
