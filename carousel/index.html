@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Carousel</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+    <style>
+    body {
+        -webkit-text-size-adjust:100%;
+        margin:0;
+        padding:0;
+    }
+    .thumbnail {
+        margin:0 auto;
+        width:200px;
+    }
+    .thumbnail .item {
+        border:1px solid #000;
+        text-align:center;
+    }
+    </style>
+</head>
+
+<body>
+<script>
+<!-- http://uzurea.net/explanation-of-jquery-slider-slick/ -->
+$(document).ready(function() {
+    $('.thumbnail').slick({
+        arrows:true,
+        dots:true,
+        infinite:true,
+        slidesToShow:2,
+        slidesToScroll:2,
+    });
+});
+</script>
+
+    <div style="margin:20px; background:#ccc;">
+        <h2>Carousel</h2>
+        <div style="height:80px;">
+            <div class="thumbnail">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
